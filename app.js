@@ -8,7 +8,7 @@ var app = express(),
     staticPath = path.join(__dirname, "static");
 
     
-app.use(morgan("combined"));
+app.use(morgan("short"));
 
 
 app.use(express.static(staticPath));
